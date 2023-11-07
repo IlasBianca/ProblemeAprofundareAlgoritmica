@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+//problema 2/ probleme aprofundare c++
+//Sa se genereze toate perechile de numere pozitive mai mici sau egale decat un numar n citit de la tastatura a caror suma este m.
+int main() {
+    int n, m;
+    n=4;
+    m=3;
+    for (int a=0;a<=n; a++){
+        for (int b=0; b<=n; b++){
+            if ((a+b)>=0 && (a+b)<=m){
+                cout<<"("<<a<<","<<b<<")"<<endl;
+            }
+        }
+    }
+    return 0;
+}
