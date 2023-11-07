@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+//problema 9/ probleme aprofundare c++
+//Se citesc de la tastatura 3 numere: p, q, r. Sa se genereze toate tripletele a,b,c astfel incat a<p, b<q, c<r.
+int main() {
+    int p, q,r;
+    cin>>p>>q>>r;
+    for (int a=0; a<p; a++){
+        for (int b=0; b<q; b++){
+            for (int c=0; c<r; c++){
+                cout<<"("<<a<<","<<b<<","<<c<<")"<<endl;
+            }
+        }
+    }
+    return 0;
+}
