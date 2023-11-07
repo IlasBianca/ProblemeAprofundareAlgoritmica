@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+//problema 1/ probleme aprofundare c++: 1. 
+//Se citesc numere de la tastatura pana la intalnirea valorii 0. 
+//Pentru fiecare numar citit n, vei mai citi n numere. Afisezi pe ecran suma numerelor pare. 
+int main() {
+    int n,x, sumaPare=0;
+    n=1;
+    while (n!=0){
+        cout<<"Introdu un numar!"<<endl;
+        cin>>n;
+        cout<<"Am citit:"<<n<<endl;
+        cout<<"Voi introduce in continuare "<<n<<" numere"<<endl;
+        for (int i=0; i<n; i++){
+            cout<<i+1<<" numar:";
+            cin>>x;
+            if (x%2==0){
+                sumaPare=sumaPare+x;
+            }
+        }
+        cout<<"Suma numerelor pare introduse este:"<<sumaPare<<endl;
+        sumaPare=0;
+    }
+    return 0;
+}
