@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+//problema 5/ probleme aprofundare c++
+//Sa se genereze cvartete de numere a,b,c,d. a si b sunt mai mici decat un numar n citit de la tastatura, 
+//iar c si d sunt mai mici decat un numar p citit de la tastatura, 
+//cu conditia ca diferenta dintre a si b sa fie egala cu diferenta dintre c si d.
+int main() {
+    int n, p;
+    n=8;
+    p=2;
+    for (int a=0; a<n; a++){
+        for (int b=0; b<n; b++){
+            for (int c=0; c<p; c++){
+                for (int d=0; d<p; d++){
+                    if ((a-b)==(c-d)){
+                        cout<<"("<<a<<","<<b<<","<<c<<","<<d<<")"<<endl;
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
