@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+//problema 8/ probleme aprofundare c++
+//Se citesc numere de la tastatura n si m, pana cand cel putin unul dintre ele are valoarea mai mica sau egala decat 0. 
+//Sa se genereze toate tripletele de numere, mai mici decat n, a caror suma este m.
+//Ex. 2,3 -> se genereaza toate tripletele de 3 numere a caror suma este 2
+//0,2 => se opreste programul
+int main() {
+    int n, m;
+    n=1;
+    m=1;
+    while ((n!=0) && (m!=0)){
+        cin>>n;
+        cin>>m;
+        for (int i=0; i<n; i++){
+            for (int j=0; j<n; j++){
+                for (int k=0; k<n; k++){
+                    if (i+j+k==m){
+                        cout<<"("<<i<<","<<j<<","<<k<<")"<<endl;
+                    }
+                    else {
+                        cout<<i<<" "<<j<<" "<<k<<endl;
+                    }
+                }
+            }
+        }
+    }
+
+
+    return 0;
+}
