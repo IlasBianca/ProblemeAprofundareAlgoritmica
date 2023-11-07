@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+//problema 7/ probleme aprofundare c++
+//Sa se genereze toate tripletele de numere a,b,c, mai mici decat un numar de la tastatura n, astfel incat sa se indeplineasca relatia pitagoreica a2+b2=c2.
+int main() {
+    int n;
+    cin>>n;
+    for (int a=0; a<n; a++){
+        for (int b=0; b<n; b++){
+            for (int c=0; c<n; c++){
+                if (a*a+b*b==c*c){
+                    cout<<"("<<a<<","<<b<<","<<c<<")"<<endl;
+                }
+            }
+        }
+    }
+    return 0;
+}
