@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+//problema 6/ probleme aprofundare c++
+//Se da un numar  n cuprins intre 10 si 20. 
+//Se va afisa pe ecran matrici patratice de ordin k*k, 
+//unde k este fiecare numar din intervalul n si 1. 
+//Matricile se vor afisa in ordine descrescatoare a dimensiunii lor, separate prin endl.
+int main() {
+    int n;
+    cin>>n;
+    for (int k=n; k>=1; k--){
+        for (int i=0; i<k; i++){
+            for (int j=0; j<k; j++){
+                cout<<"*";
+            }
+            cout<<endl;
+        }
+        cout<<endl;
+    }
+
+
+    return 0;
+}
